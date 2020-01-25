@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Elektronski dnevnik</title>
+    <style>
+    * {
+    margin: 5px;
+padding: 5px;
+    }
+    </style>
+</head>
+
+<body>
+   <form action="/" name="forma" method="GET">
+<fieldset>
+    <legend>Podaci o uceniku:</legend>
+    <input type="text" id="iIme" name="nIme" placeholder="unesite ime..."><br>
+<input type="text" name="nPrezime" id="iPrezime" placeholder="unesite prezime..."><br>
+<input type="text" name="nOdeljenje" id="iOdeljenje" placeholder="unesite odeljenje..."><br>
+
+<fieldset>
+    <legend>Predmeti i ocene:</legend>
+    <select name="nPredmeti" id="iPredmeti">
+        <option value="">===Odaberite predmet===</option>
+        <option value="Web">Web</option>
+        <option value="Programiranje">Programiranje</option>
+        <option value="Matematika">Matematika</option>
+        <option value="Elektronika">Elektronika</option>
+        <option value="Baze">Baze</option>
+    </select>
+    <br>
+
+    <select name="nOcene" id="iOCene">
+        <option value="">===Unesite ocenu===</option>
+        <option value="1">Nedovoljan</option>
+        <option value="2">Dovoljan</option>
+        <option value="3">Dobar</option>
+        <option value="4">Vrlodobar</option>
+        <option value="5">Odlican</option>
+    </select>
+</fieldset>
+
+<input type="button" value="Kreiraj ucenika" id="itUcenik">
+<input type="button" value="Kreiraj listu ocena" id="itOcena">
+<input type="button" value="Upisi podatke" id="itUpisi">
+</fieldset>
+
+
+
+
+</form> 
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
